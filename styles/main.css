@@ -1,0 +1,135 @@
+body {
+    background: white;
+}
+
+header {
+    /* background-color:rgba(155, 203, 209, 0.5); */
+    width: 100vw;
+    height: 100px;
+    z-index: -1;
+    position: relative;
+    top: 0;
+}
+
+.skew-main:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  width: 50%;
+  height: 60vh;
+  background: rgba(155, 203, 209, 0.5);
+  z-index: 0;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(13deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+.skew-main:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: visible;
+  width: 50%;
+  height: 60vh;
+  background: rgba(155, 203, 209, 0.5);
+  z-index: 0;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-13deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+p {
+    position: relative;
+    top: 25rem;
+    text-align: center;
+}
+
+.skew-second:before {
+  content: '';
+  position: absolute;
+  top: 35.7rem;
+  left: 0;
+  overflow: visible;
+  width: 50%;
+  height: 7vh;
+  background: rgb(206, 202, 202);
+  z-index: 0;
+  transform: skewY(13deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+.skew-second:after {
+  content: '';
+  position: absolute;
+  top: 35.7rem;
+  right: 0;
+  overflow: visible;
+  width: 50%;
+  height: 7vh;
+  background: rgb(206, 202, 202);
+  z-index: 0;
+  transform: skewY(-13deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+.skew-line:before {
+  content: '';
+  position: absolute;
+  top: 32rem;
+  left: 0;
+  overflow: visible;
+  width: 50%;
+  height: 1px;
+  background: red;
+  z-index: 0;
+  transform: skewY(13deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+.skew-line:after {
+  content: '';
+  position: absolute;
+  top: 32rem;
+  right: 0;
+  overflow: visible;
+  width: 50%;
+  height: 1px;
+  background: red;
+  z-index: 0;
+  transform: skewY(-13deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+
+/* ********* MAIN ******** */
+main:before {
+    /* background: rgba(224, 224, 224, 0.75); */
+    /* background: red;
+    content: '';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    z-index: -1; */
+}
+
+main {
+    background-color: pink;
+    position: relative;
+}
