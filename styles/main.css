@@ -3,7 +3,6 @@ body {
 }
 
 .main-header {
-    /* background-color:rgba(155, 203, 209, 0.75); */
     width: 100vw;
     height: 45rem;
     z-index: -1;
@@ -21,28 +20,28 @@ body {
     height: 100%;
 }
 
-.skew-main:before {
+.header-skew:before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -6em;
   left: 0;
   overflow: visible;
   width: 50%;
-  height: 60vh;
+  height: 70vh;
   background: rgba(155, 203, 209, 0.5);
   z-index: 0;
   transform: skewY(13deg);
   backface-visibility: initial;
 }
 
-.skew-main:after{
+.header-skew:after{
   content: '';
   position: absolute;
-  top: 0;
+  top: -6em;
   right: 0;
   overflow: visible;
   width: 50%;
-  height: 60vh;
+  height: 70vh;
   background: rgba(155, 203, 209, 0.5);
   z-index: 0;
   transform: skewY(-13deg);
@@ -55,7 +54,7 @@ body {
     text-align: center;
 }
 
-.skew-second:before {
+.header-skew-second:before {
   content: '';
   position: absolute;
   top: 35.7rem;
@@ -71,7 +70,7 @@ body {
   border-top: 1px solid rgba(158, 158, 158, 0.75);
 }
 
-.skew-second:after {
+.header-skew-second:after {
   content: '';
   position: absolute;
   top: 35.7rem;
@@ -87,7 +86,7 @@ body {
   border-top: 1px solid rgba(158, 158, 158, 0.75);
 }
 
-.skew-line:before {
+.header-skew-line:before {
   content: '';
   position: absolute;
   top: 32rem;
@@ -101,7 +100,7 @@ body {
   backface-visibility: initial;
 }
 
-.skew-line:after {
+.header-skew-line:after {
   content: '';
   position: absolute;
   top: 32rem;
@@ -117,16 +116,17 @@ body {
 
 
 /* ********* MAIN ******** */
-main {
+.project-section {
     position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 6em;
+    border-bottom: 1px solid rgba(158, 158, 158, 0.75)
 }
 
-main:before {
+.project-section:before {
     background: rgba(158, 158, 158, 0.75);
     content: '';
     height: 100%;
@@ -143,13 +143,13 @@ main:before {
     margin: 0 auto 6em;
     padding: 1em 0;
     position: relative;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(158, 158, 158, 0.75);
+    border-bottom: 1px solid rgba(158, 158, 158, 0.75);
 }
 
 .project-title:before,
 .project-title:after {
-    background: black;
+    background: rgba(158, 158, 158, 0.75);
     content: '';
     display: block;
     height: 1px;
@@ -158,7 +158,7 @@ main:before {
     width: 100%;
 }
 
-.project-title header {
+.project-title h1 {
     text-align: center;
     padding: 4em;
     z-index: 1;
@@ -185,4 +185,38 @@ main:before {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* ********** About ********** */
+.about-section {
+    width: 100%;
+    height: 50vh;
+    padding-top: 4em;
+}
+
+.about-me-title {
+    background: white;
+    width: 40rem;
+    margin: 0 auto 6em;
+    padding: 1em 0;
+    position: relative;
+    border-top: 1px solid rgba(158, 158, 158, 0.75);
+    border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+}
+
+.about-me-title:before,
+.about-me-title:after {
+    background: rgba(158, 158, 158, 0.75);
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+}
+
+.about-me-title h1 {
+    text-align: center;
+    padding: 4em;
+    z-index: 1;
 }
