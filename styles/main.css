@@ -2,13 +2,23 @@ body {
     background: white;
 }
 
-header {
-    /* background-color:rgba(155, 203, 209, 0.5); */
+.main-header {
+    /* background-color:rgba(155, 203, 209, 0.75); */
     width: 100vw;
-    height: 100px;
+    height: 45rem;
     z-index: -1;
     position: relative;
     top: 0;
+}
+
+.main-header:before {
+    background: rgba(158, 158, 158, 0.75);
+    content: '';
+    left: 50%;
+    position: absolute;
+    width: 1px;
+    z-index: 2;
+    height: 100%;
 }
 
 .skew-main:before {
@@ -68,6 +78,8 @@ p {
   transform: skewY(13deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: initial;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+  border-top: 1px solid rgba(158, 158, 158, 0.75);
 }
 
 .skew-second:after {
@@ -83,6 +95,8 @@ p {
   transform: skewY(-13deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: initial;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+  border-top: 1px solid rgba(158, 158, 158, 0.75);
 }
 
 .skew-line:before {
@@ -93,7 +107,7 @@ p {
   overflow: visible;
   width: 50%;
   height: 1px;
-  background: red;
+  background: rgba(158, 158, 158, 0.75);
   z-index: 0;
   transform: skewY(13deg);
   -webkit-backface-visibility: hidden;
@@ -108,7 +122,7 @@ p {
   overflow: visible;
   width: 50%;
   height: 1px;
-  background: red;
+  background: rgba(158, 158, 158, 0.75);
   z-index: 0;
   transform: skewY(-13deg);
   -webkit-backface-visibility: hidden;
@@ -118,18 +132,44 @@ p {
 
 /* ********* MAIN ******** */
 main:before {
-    /* background: rgba(224, 224, 224, 0.75); */
-    /* background: red;
+    background: rgba(158, 158, 158, 0.75);
     content: '';
     height: 100%;
     left: 50%;
     position: absolute;
     top: 0;
     width: 1px;
-    z-index: -1; */
+    z-index: -1;
 }
 
 main {
-    background-color: pink;
     position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects {
+    background: white;
+    width: 40rem;
+    height: 20rem;
+    margin: 8rem auto 0;
+    border-top: 1px solid black;
+}
+
+.projects:before {
+    background: black;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    /* box-sizing: inherit; */
+}
+
+.projects header {
+    text-align: center;
+    z-index: 1;
 }
