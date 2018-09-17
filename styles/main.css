@@ -27,7 +27,7 @@ body {
   left: 0;
   overflow: visible;
   width: 50%;
-  height: 70vh;
+  height: 42em;
   background: rgba(155, 203, 209, 0.5);
   z-index: 0;
   transform: skewY(13deg);
@@ -41,7 +41,7 @@ body {
   right: 0;
   overflow: visible;
   width: 50%;
-  height: 70vh;
+  height: 42em;
   background: rgba(155, 203, 209, 0.5);
   z-index: 0;
   transform: skewY(-13deg);
@@ -219,4 +219,108 @@ body {
     text-align: center;
     padding: 4em;
     z-index: 1;
+}
+
+/* ********* Footer ********** */
+footer {
+    width: 100%;
+    height: 100px;
+    /* background: blue; */
+    z-index: -1;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    width: 100%;
+    background: rgb(155, 203, 209);
+    height: 55rem;
+}
+
+.footer-skew:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: visible;
+  width: 50%;
+  height: 15em;
+  background: rgb(155, 203, 209);
+  z-index: 0;
+  transform: skewY(13deg);
+  backface-visibility: initial;
+}
+
+.footer-skew:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: visible;
+  width: 50%;
+  height: 15em;
+  background: rgb(155, 203, 209);
+  z-index: 0;
+  transform: skewY(-13deg);
+  backface-visibility: initial;
+}
+
+.footer-skew-second:before {
+  content: '';
+  position: absolute;
+  bottom: 11.8em;
+  left: 0;
+  overflow: visible;
+  width: 50%;
+  height: 7vh;
+  background: rgb(206, 202, 202);
+  z-index: 0;
+  transform: skewY(13deg);
+  backface-visibility: initial;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+  border-top: 1px solid rgba(158, 158, 158, 0.75);
+}
+
+.footer-skew-second:after {
+  content: '';
+  position: absolute;
+  bottom: 11.8em;
+  right: 0;
+  overflow: visible;
+  width: 50%;
+  height: 7vh;
+  background: rgb(206, 202, 202);
+  z-index: 0;
+  transform: skewY(-13deg);
+  backface-visibility: initial;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+  border-top: 1px solid rgba(158, 158, 158, 0.75);
+}
+
+.footer-skew-line:before {
+  content: '';
+  position: absolute;
+  bottom: 8em;
+  left: 0;
+  overflow: visible;
+  width: 50%;
+  height: 1px;
+  background: rgba(158, 158, 158, 0.75);
+  z-index: 0;
+  transform: skewY(13deg);
+  backface-visibility: initial;
+}
+
+.footer-skew-line:after {
+  content: '';
+  position: absolute;
+  bottom: 8em;
+  right: 0;
+  overflow: visible;
+  width: 50%;
+  height: 1px;
+  background: rgba(158, 158, 158, 0.75);
+  z-index: 0;
+  transform: skewY(-13deg);
+  backface-visibility: initial;
 }
