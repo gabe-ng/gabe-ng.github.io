@@ -323,7 +323,30 @@ body {
     z-index: 1;
 }
 
+.skill-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(158, 158, 158, 0.75);
+}
 
+.branch {
+    height: 20em;
+    width: 10em;
+    /* background: green; */
+    margin-top: 1em;
+}
+
+.branch.first:before {
+    background: rgba(158, 158, 158, 0.75);
+    content: '';
+    left: 15%;
+    position: absolute;
+    width: 1px;
+    z-index: 2;
+    height: 20%;
+}
 
 /* ********* Footer ********** */
 footer {
