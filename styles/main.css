@@ -283,7 +283,7 @@ body {
     border-radius: 0 5px 5px 0 ;
 }
 
-.project-overlay {
+.project-overlay.left {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -292,23 +292,55 @@ body {
   overflow: hidden;
   width: 0;
   height: 100%;
-  transition: .5s ease;
+  transition: .75s ease;
 }
 
-.project-image:hover .project-overlay {
+.project-overlay.right {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .75s ease;
+}
+
+.project-image:hover .project-overlay.right {
+  width: 100%;
+  left: 0;
+}
+
+.project-image:hover .project-overlay.left {
   width: 100%;
 }
 
-.project-text {
+.project-text.left {
   color: white;
-  font-size: 20px;
+  font-size: 1.2em;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  white-space: nowrap;
+}
+
+.project-text.right {
+  color: white;
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.project-text p {
+    width: 120%;
+    line-height: 2;
 }
 
 .project-content {
@@ -430,6 +462,10 @@ body {
     line-height: 1.5;
 }
 
+.my-bio a {
+    border-bottom: 1px dotted black;
+}
+
 /* ********* Skills ********* */
 .skill-section {
     width: 100%;
@@ -534,7 +570,7 @@ footer {
 .footer-content {
     width: 100%;
     background: rgb(155, 203, 209);
-    height: 35rem;
+    height: 30em;
     z-index: 3;
 }
 
@@ -624,4 +660,12 @@ footer {
   z-index: 0;
   transform: skewY(-13deg);
   backface-visibility: initial;
+}
+
+.footer {
+    position: relative;
+    top: 100%;
+    background-color: red;
+    width: 100%;
+    height: 8em;
 }
