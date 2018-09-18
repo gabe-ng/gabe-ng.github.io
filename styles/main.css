@@ -366,25 +366,29 @@ body {
 }
 
 .skill-container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    background: red;
 }
 
 .skill-row {
     display: flex;
     width: 100%;
+    background: blue;
+    margin-bottom: 1em;
 }
 
 .skill {
     max-width: 10em;
     max-height: 10em;
+    margin: 0 .5em;
 }
 
 .skill.large {
-    max-width: 7em;
-    max-height: 7em;
+    max-width: 7.5em;
+    max-height: 7.5em;
 }
 
 
