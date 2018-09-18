@@ -72,9 +72,9 @@ body {
 	text-indent: 8px;
 }
 .sliding-vertical span{
-	animation: topToBottom 17s linear infinite 0s;
-	-ms-animation: topToBottom 17s linear infinite 0s;
-	-webkit-animation: topToBottom 17s linear infinite 0s;
+	animation: topToBottom 17.5s linear infinite 0s;
+	-ms-animation: topToBottom 17.5s linear infinite 0s;
+	-webkit-animation: topToBottom 17.5s linear infinite 0s;
 	color: black;;
 	opacity: 0;
 	overflow: hidden;
@@ -92,14 +92,14 @@ body {
 }
 .sliding-vertical span:nth-child(4){
 	animation-delay: 10.5s;
-	-ms-animation-delay: 105s;
-	-webkit-animation-delay: 10s;
+	-ms-animation-delay: 10.5s;
+	-webkit-animation-delay: 10.5s;
 }
 
 .sliding-vertical span:nth-child(5){
-	animation-delay: 13.5s;
-	-ms-animation-delay: 13.5s;
-	-webkit-animation-delay: 13.5s;
+	animation-delay: 14s;
+	-ms-animation-delay: 14s;
+	-webkit-animation-delay: 14s;
 }
 
 /* topToBottom Animation*/
@@ -239,7 +239,7 @@ body {
 .project-title h1 {
     font-size: 2.5em;
     text-align: center;
-    padding: 2em;
+    padding: 1.5em;
     z-index: 2;
 }
 
@@ -267,6 +267,7 @@ body {
 .project-image {
     width: 50%;
     background: teal;
+    position: relative;
 }
 
 .project.left img {
@@ -282,6 +283,34 @@ body {
     border-radius: 0 5px 5px 0 ;
 }
 
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.project-image:hover .project-overlay {
+  width: 100%;
+}
+
+.project-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
 .project-content {
     width: 50%;
     display: flex;
@@ -292,7 +321,9 @@ body {
 
 .project-content h1 {
     font-size: 1.7em;
-    font-weight: 600;
+    font-weight: 550;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
 }
 
 .project-content p {
@@ -350,7 +381,8 @@ body {
 
 .about-title h1 {
     text-align: center;
-    padding: 4em;
+    font-size: 2.5em;
+    padding: 1.5em;
     z-index: 1;
 }
 
@@ -437,8 +469,9 @@ body {
 }
 
 .skill-title h1 {
+    font-size: 2.5em;
     text-align: center;
-    padding: 4em;
+    padding: 1.5em;
     z-index: 1;
 }
 
