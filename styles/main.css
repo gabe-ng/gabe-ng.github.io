@@ -50,8 +50,85 @@ body {
 
 .main-title {
     position: relative;
-    top: 25rem;
+    top: 2.7em;
     text-align: center;
+    font-size: 4em;
+    z-index: 4;
+}
+
+.second-title {
+  color: black;
+  max-width: 15em;
+  font-size: 2em;
+  letter-spacing: 3px;
+  position: relative;
+  top: 7em;
+  left: 39%;
+  z-index: 4;
+}
+
+/*Vertical Sliding*/
+.sliding-vertical {
+	text-indent: 8px;
+}
+.sliding-vertical span{
+	animation: topToBottom 17s linear infinite 0s;
+	-ms-animation: topToBottom 17s linear infinite 0s;
+	-webkit-animation: topToBottom 17s linear infinite 0s;
+	color: black;;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.sliding-vertical span:nth-child(2){
+	animation-delay: 3.5s;
+	-ms-animation-delay: 3.5s;
+	-webkit-animation-delay: 3.5s;
+}
+.sliding-vertical span:nth-child(3){
+	animation-delay: 7s;
+	-ms-animation-delay: 7s;
+	-webkit-animation-delay: 7s;
+}
+.sliding-vertical span:nth-child(4){
+	animation-delay: 10.5s;
+	-ms-animation-delay: 105s;
+	-webkit-animation-delay: 10s;
+}
+
+.sliding-vertical span:nth-child(5){
+	animation-delay: 13.5s;
+	-ms-animation-delay: 13.5s;
+	-webkit-animation-delay: 13.5s;
+}
+
+/* topToBottom Animation*/
+@-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-50px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
 }
 
 .header-skew-second:before {
@@ -160,8 +237,9 @@ body {
 }
 
 .project-title h1 {
+    font-size: 2.5em;
     text-align: center;
-    padding: 4em;
+    padding: 2em;
     z-index: 2;
 }
 
@@ -419,16 +497,6 @@ footer {
     position: relative;
     bottom: -16em;
 }
-
-/* footer:before {
-    background: rgba(158, 158, 158, 0.75);
-    content: '';
-    left: 50%;
-    position: absolute;
-    width: 1px;
-    z-index: 2;
-    height: 100%;
-} */
 
 .footer-content {
     width: 100%;
