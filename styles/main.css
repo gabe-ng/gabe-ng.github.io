@@ -323,20 +323,19 @@ body {
 /* ********* Skills ********* */
 .skill-section {
     width: 100%;
-    height: 40em;
     padding-top: 6em;
     margin-bottom: 6em;
 }
 
-/* .skill-section:before {
+.skill-section:after {
     background: rgba(158, 158, 158, 0.75);
     content: '';
     left: 50%;
     position: absolute;
     width: 1px;
-    z-index: 0;
-    height: 100%;
-} */
+    z-index: 1;
+    height: 90%;
+}
 
 .skill-title {
     background: whitesmoke;
@@ -366,48 +365,62 @@ body {
 }
 
 .skill-container {
-    width: 80%;
+    width: 85%;
+    background-color: whitesmoke;
     margin: 0 auto;
+    padding: 2em 0;
+    position: relative;
     display: flex;
     flex-direction: column;
-    background: red;
+    border-top: 1px solid rgba(158, 158, 158, 0.75);
+    border-bottom: 1px solid rgba(158, 158, 158, 0.75);
 }
 
 .skill-row {
     display: flex;
     width: 100%;
-    background: blue;
-    margin-bottom: 1em;
+    margin: 3em auto;
 }
 
 .skill {
-    max-width: 10em;
-    max-height: 10em;
-    margin: 0 .5em;
+    max-width: 8em;
+    max-height: 8em;
+    margin: auto 1em;
 }
 
-.skill.large {
-    max-width: 7.5em;
-    max-height: 7.5em;
+.skill.gulp {
+    margin: 0 1em;
 }
 
+.skill.med {
+    max-width: 7em;
+    max-height: 6em;
+}
+
+.skill.small {
+    max-width: 5.5em;
+    max-height: 5.5em;
+}
 
 .skill img {
     width: 100%;
     height: auto;
 }
 
+.skill img.gulp-svg {
+    max-height: 8em;
+}
 
 /* ********* Footer ********** */
 footer {
     width: 100%;
     height: 8em;
-    z-index: -1;
+    z-index: 3;
     position: relative;
-    bottom: 0;
+    bottom: -16em;
 }
 
-/* .footer-content:before {
+/* footer:before {
     background: rgba(158, 158, 158, 0.75);
     content: '';
     left: 50%;
@@ -421,6 +434,7 @@ footer {
     width: 100%;
     background: rgb(155, 203, 209);
     height: 35rem;
+    z-index: 3;
 }
 
 .footer-skew:before {
@@ -430,7 +444,7 @@ footer {
   left: 0;
   overflow: visible;
   width: 50%;
-  height: 15em;
+  height: 14.5em;
   background: rgb(155, 203, 209);
   z-index: 0;
   transform: skewY(13deg);
@@ -444,7 +458,7 @@ footer {
   right: 0;
   overflow: visible;
   width: 50%;
-  height: 15em;
+  height: 14.5em;
   background: rgb(155, 203, 209);
   z-index: 0;
   transform: skewY(-13deg);
@@ -454,13 +468,13 @@ footer {
 .footer-skew-second:before {
   content: '';
   position: absolute;
-  bottom: 15em;
+  bottom: 14.5em;
   left: 0;
   overflow: visible;
   width: 50%;
-  height: 7vh;
+  height: 6vh;
   background: rgb(206, 202, 202);
-  z-index: 0;
+  z-index: 3;
   transform: skewY(13deg);
   backface-visibility: initial;
   border-bottom: 1px solid rgba(158, 158, 158, 0.75);
@@ -470,11 +484,11 @@ footer {
 .footer-skew-second:after {
   content: '';
   position: absolute;
-  bottom: 15em;
+  bottom: 14.5em;
   right: 0;
   overflow: visible;
   width: 50%;
-  height: 7vh;
+  height: 6vh;
   background: rgb(206, 202, 202);
   z-index: 0;
   transform: skewY(-13deg);
