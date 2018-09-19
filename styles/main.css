@@ -1,9 +1,9 @@
 body {
     background: whitesmoke;
+    font-family: Helvetica, sans-serif;
 }
 
 .main-header {
-    width: 100vw;
     height: 50em;
     z-index: -1;
     position: relative;
@@ -536,7 +536,14 @@ body {
     max-width: 8em;
     max-height: 8em;
     margin: auto 1em;
+    transition: .75s ease-in-out;
 }
+
+.skill:hover {
+    transform: scale(1.5);
+}
+
+
 
 .skill.gulp {
     margin: 0 1em;
