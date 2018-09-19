@@ -195,6 +195,7 @@ body {
 /* ********* MAIN ******** */
 .project-section {
     position: relative;
+    /* margin: 0 auto; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -320,6 +321,7 @@ body {
   color: white;
   font-size: 1.2em;
   position: absolute;
+  width: 15em;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -330,6 +332,7 @@ body {
 .project-text.right {
   color: white;
   font-size: 1.2em;
+  width: 15em;
   position: absolute;
   top: 50%;
   left: 50%;
