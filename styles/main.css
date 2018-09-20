@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Lora:400i|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Anton|Lora:400i|Raleway:400,600');
 
 body {
     background: #292b2f;
@@ -378,9 +378,9 @@ body {
 
 .project-content h1 {
     font-size: 2.1em;
+    font-weight: 600;
     text-transform: uppercase;
     color: #66fcf1;
-    font-weight: 550;
     margin-bottom: 1em;
     letter-spacing: 1px;
 }
@@ -796,4 +796,100 @@ footer {
 
 .icon-list i:hover{
     color: #66fcf1;
+}
+
+/* ******* Media Queries ******* */
+@media only screen and (max-width: 1115px) {
+   .scroll-top {
+        display: none;
+    }
+
+    .project-container {
+        width: 100vw;
+    }
+
+    .project.left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project.right {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .project {
+        width: 80%;
+        height: 36em;
+        padding: 2em 0;
+        position: relative;
+        background: #292b2f;
+        border-top: 1px solid #66fcf1;
+        border-bottom: 1px solid #66fcf1;
+        margin: 2em auto 2em;
+    }
+
+    .project.left .project-image {
+        width: 75%;
+        margin-bottom: 5em;
+    }
+
+    .project.right .project-image {
+        width: 75%;
+        margin-bottom: 3em;
+    }
+
+    .project-content p {
+        max-width: 100%;
+    }
+
+    .ss .repo {
+        margin-bottom: 2.5em;
+    }
+
+    .sh .repo {
+        margin-bottom: 3em;
+    }
+
+    .wf .repo,
+    .bt .repo {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .main-title {
+        font-size: 3em;
+    }
+
+    .second-title {
+        font-size: 1.5em;
+    }
+
+    .about-container {
+        width: 100%;
+        height: 38em;
+    }
+
+    .about-me {
+        height: 36em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-image {
+        margin-bottom: 1em;
+    }
+
+    .my-bio {
+        width: 85%;
+    }
+
+    .my-bio p {
+        max-width: 100%;
+    }
+
+    .skill-section {
+        margin-top: 6em;
+    }
 }
