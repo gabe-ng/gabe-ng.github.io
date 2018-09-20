@@ -489,7 +489,7 @@ body {
 .my-bio p {
     max-width: 90%;
     margin: 1em auto;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .my-bio a {
@@ -608,13 +608,6 @@ footer {
     bottom: -16em;
 }
 
-.footer-content {
-    width: 100%;
-    background: #018185;
-    height: 30em;
-    z-index: 3;
-}
-
 .footer-skew:before {
   content: '';
   position: absolute;
@@ -703,9 +696,47 @@ footer {
   backface-visibility: initial;
 }
 
+.footer-content {
+    width: 100%;
+    background: #018185;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+
+.contact {
+    position: relative;
+    top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coming-soon {
+    padding-top: 1em;
+}
+
+.email {
+    font-size: 2em;
+}
+
+.contact a {
+    font-size: 1em;
+    border-bottom: 1px dotted white;
+    cursor: pointer;
+}
+
+.contact a:hover {
+    border-bottom: 1px solid white;
+}
+
 .footer {
     width: 100%;
-    height: 8em;
+    height: 3em;
+    margin-bottom: 2em;
     color: #ffffff75;
     position: relative;
     top: 100%;
