@@ -532,6 +532,7 @@ body {
 
 .skill-row {
     display: flex;
+    justify-content: center;
     width: 100%;
     margin: 3em auto;
 }
