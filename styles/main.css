@@ -1,6 +1,7 @@
 body {
-    background: whitesmoke;
-    font-family: Helvetica, sans-serif;
+    background: #292b2f;
+    color: white;
+    font-family: "Raleway", sans-serif;
 }
 
 .main-header {
@@ -11,7 +12,7 @@ body {
 }
 
 .main-header:before {
-    background: rgba(158, 158, 158, 0.75);
+    /* background: #66fcf1; */
     content: '';
     left: 50%;
     position: absolute;
@@ -28,7 +29,8 @@ body {
   overflow: visible;
   width: 50%;
   height: 42em;
-  background: rgba(155, 203, 209, 0.5);
+  background: #018185;
+  /* background-image: linear-gradient(to right,#66fcf1, #076585); */
   z-index: 0;
   transform: skewY(13deg);
   backface-visibility: initial;
@@ -42,7 +44,8 @@ body {
   overflow: visible;
   width: 50%;
   height: 42em;
-  background: rgba(155, 203, 209, 0.5);
+  background: #018185;
+  /* background-image: linear-gradient(to left,#66fcf1, #477b8d, #076585); */
   z-index: 0;
   transform: skewY(-13deg);
   backface-visibility: initial;
@@ -138,12 +141,12 @@ body {
   overflow: visible;
   width: 50%;
   height: 7vh;
-  background: rgb(206, 202, 202);
+  background: #d7d5d9;
   z-index: 0;
   transform: skewY(13deg);
   backface-visibility: initial;
-  border-bottom: 1px solid rgba(158, 158, 158, 0.75);
-  border-top: 1px solid rgba(158, 158, 158, 0.75);
+  border-bottom: 1px solid #66fcf1;
+  border-top: 1px solid #66fcf1;
 }
 
 .header-skew-second:after {
@@ -154,12 +157,12 @@ body {
   overflow: visible;
   width: 50%;
   height: 7vh;
-  background: rgb(206, 202, 202);
+  background: #d7d5d9;
   z-index: 0;
   transform: skewY(-13deg);
   backface-visibility: initial;
-  border-bottom: 1px solid rgba(158, 158, 158, 0.75);
-  border-top: 1px solid rgba(158, 158, 158, 0.75);
+  border-bottom: 1px solid #66fcf1;
+  border-top: 1px solid #66fcf1;
 }
 
 .header-skew-line:before {
@@ -170,7 +173,7 @@ body {
   overflow: visible;
   width: 50%;
   height: 1px;
-  background: rgba(158, 158, 158, 0.75);
+  background: #66fcf1;
   z-index: 0;
   transform: skewY(13deg);
   backface-visibility: initial;
@@ -184,7 +187,7 @@ body {
   overflow: visible;
   width: 50%;
   height: 1px;
-  background: rgba(158, 158, 158, 0.75);
+  background: #66fcf1;
   z-index: 0;
   transform: skewY(-13deg);
   backface-visibility: initial;
@@ -200,11 +203,11 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 5em 0;
-    border-bottom: 1px solid rgba(158, 158, 158, 0.75)
+    border-bottom: 1px solid #66fcf1
 }
 
 .project-section:before {
-    background: rgba(158, 158, 158, 0.75);
+    background: #66fcf1;
     content: '';
     height: 100%;
     left: 50%;
@@ -215,19 +218,19 @@ body {
 }
 
 .project-title {
-    background: whitesmoke;
+    background: #292b2f;
     width: 40rem;
     margin: 0 auto 6em;
     padding: 1em 0;
     position: relative;
-    border-top: 1px solid rgba(158, 158, 158, 0.75);
-    border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+    border-top: 1px solid #66fcf1;
+    border-bottom: 1px solid #66fcf1;
     z-index: 1;
 }
 
 .project-title:before,
 .project-title:after {
-    background: rgba(158, 158, 158, 0.75);
+    background: #66fcf1;
     content: '';
     display: block;
     height: 1px;
@@ -237,9 +240,9 @@ body {
 }
 
 .project-title h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    padding: 1.2em;
     text-align: center;
-    padding: 1.5em;
     z-index: 2;
 }
 
@@ -249,7 +252,7 @@ body {
 }
 
 .project-container:before {
-    background: rgba(158, 158, 158, 0.75);
+    background: #66fcf1;
     content: '';
     left: 50%;
     position: absolute;
@@ -273,7 +276,7 @@ body {
 .project.left img {
     width: 100%;
     height: 100%;
-    border-right: 1px solid whitesmoke;
+    border-right: 1px solid #292b2f;
     border-radius: 5px 0 0 5px;
 }
 
@@ -354,7 +357,8 @@ body {
 }
 
 .project-content h1 {
-    font-size: 1.7em;
+    font-size: 2.1em;
+    color: #66fcf1;
     font-weight: 550;
     margin-bottom: 1em;
     letter-spacing: 1px;
@@ -362,6 +366,7 @@ body {
 
 .project-content p {
     max-width: 85%;
+    font-style: italic;
 }
 
 /* ********** About ********** */
@@ -369,11 +374,11 @@ body {
     width: 100%;
     height: 52em;
     padding-top: 6em;
-    border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+    border-bottom: 1px solid #66fcf1;
 }
 
 .about-section:before {
-    background: rgba(158, 158, 158, 0.75);
+    background: #66fcf1;
     content: '';
     left: 50%;
     position: absolute;
@@ -383,7 +388,7 @@ body {
 }
 
 .about-section:after{
-    background: rgba(158, 158, 158, 0.75);
+    background: #66fcf1;
     content: '';
     left: 50%;
     position: absolute;
@@ -393,18 +398,18 @@ body {
 }
 
 .about-title {
-    background: whitesmoke;
+    background: #292b2f;
     width: 40rem;
     margin: 0 auto 6em;
     padding: 1em 0;
     position: relative;
-    border-top: 1px solid rgba(158, 158, 158, 0.75);
-    border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+    border-top: 1px solid #66fcf1;
+    border-bottom: 1px solid #66fcf1;
 }
 
 .about-title:before,
 .about-title:after {
-    background: rgba(158, 158, 158, 0.75);
+    background: #66fcf1;
     content: '';
     display: block;
     height: 1px;
@@ -415,17 +420,17 @@ body {
 
 .about-title h1 {
     text-align: center;
-    font-size: 2.5em;
-    padding: 1.5em;
+    font-size: 3em;
+    padding: 1.2em;
     z-index: 1;
 }
 
 .about-container {
     width: 59em;
     margin: 0 auto;
-    background: whitesmoke;
-    border-top: 1px solid rgba(158, 158, 158, 0.75);
-    border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+    background: #292b2f;
+    border-top: 1px solid #66fcf1;
+    border-bottom: 1px solid #66fcf1;
     position: relative;
     z-index: 2;
 }
@@ -476,7 +481,7 @@ body {
 }
 
 .skill-section:after {
-    background: rgba(158, 158, 158, 0.75);
+    background: #66fcf1;
     content: '';
     left: 50%;
     position: absolute;
@@ -486,18 +491,18 @@ body {
 }
 
 .skill-title {
-    background: whitesmoke;
+    background: #292b2f;
     width: 40rem;
     margin: 0 auto 6em;
     padding: 1em 0;
     position: relative;
-    border-top: 1px solid rgba(158, 158, 158, 0.75);
-    border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+    border-top: 1px solid #66fcf1;
+    border-bottom: 1px solid #66fcf1;
 }
 
 .skill-title:before,
 .skill-title:after {
-    background: rgba(158, 158, 158, 0.75);
+    background: #66fcf1;
     content: '';
     display: block;
     height: 1px;
@@ -507,22 +512,22 @@ body {
 }
 
 .skill-title h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    padding: 1.2em;
     text-align: center;
-    padding: 1.5em;
     z-index: 1;
 }
 
 .skill-container {
     width: 85%;
-    background-color: whitesmoke;
+    background-color: #292b2f;
     margin: 0 auto;
     padding: 2em 0;
     position: relative;
     display: flex;
     flex-direction: column;
-    border-top: 1px solid rgba(158, 158, 158, 0.75);
-    border-bottom: 1px solid rgba(158, 158, 158, 0.75);
+    border-top: 1px solid #66fcf1;
+    border-bottom: 1px solid #66fcf1;
 }
 
 .skill-row {
@@ -576,7 +581,7 @@ footer {
 
 .footer-content {
     width: 100%;
-    background: rgb(155, 203, 209);
+    background: #018185;
     height: 30em;
     z-index: 3;
 }
@@ -589,7 +594,7 @@ footer {
   overflow: visible;
   width: 50%;
   height: 14.5em;
-  background: rgb(155, 203, 209);
+  background: #018185;
   z-index: 0;
   transform: skewY(13deg);
   backface-visibility: initial;
@@ -603,7 +608,7 @@ footer {
   overflow: visible;
   width: 50%;
   height: 14.5em;
-  background: rgb(155, 203, 209);
+  background: #018185;
   z-index: 0;
   transform: skewY(-13deg);
   backface-visibility: initial;
@@ -617,12 +622,12 @@ footer {
   overflow: visible;
   width: 50%;
   height: 6vh;
-  background: rgb(206, 202, 202);
+  background: #d7d5d9;
   z-index: 3;
   transform: skewY(13deg);
   backface-visibility: initial;
-  border-bottom: 1px solid rgba(158, 158, 158, 0.75);
-  border-top: 1px solid rgba(158, 158, 158, 0.75);
+  border-bottom: 1px solid #66fcf1;
+  border-top: 1px solid #66fcf1;
 }
 
 .footer-skew-second:after {
@@ -633,12 +638,12 @@ footer {
   overflow: visible;
   width: 50%;
   height: 6vh;
-  background: rgb(206, 202, 202);
+  background: #d7d5d9;
   z-index: 0;
   transform: skewY(-13deg);
   backface-visibility: initial;
-  border-bottom: 1px solid rgba(158, 158, 158, 0.75);
-  border-top: 1px solid rgba(158, 158, 158, 0.75);
+  border-bottom: 1px solid #66fcf1;
+  border-top: 1px solid #66fcf1;
 }
 
 .footer-skew-line:before {
@@ -649,7 +654,7 @@ footer {
   overflow: visible;
   width: 50%;
   height: 1px;
-  background: rgba(158, 158, 158, 0.75);
+  background: #66fcf1;
   z-index: 0;
   transform: skewY(13deg);
   backface-visibility: initial;
@@ -663,7 +668,7 @@ footer {
   overflow: visible;
   width: 50%;
   height: 1px;
-  background: rgba(158, 158, 158, 0.75);
+  background: #66fcf1;
   z-index: 0;
   transform: skewY(-13deg);
   backface-visibility: initial;
@@ -683,40 +688,38 @@ footer {
 }
 
 .footer p {
-    font-size: .7em;
+    font-size: 1em;
 }
 
 .icon-list {
     width: 100%;
     text-align: center;
     list-style: none;
-    margin: 2em 0 1em;
+    margin-bottom: 1.5em;
 }
 
 .icon {
      display: inline;
      padding: 0 .5em;
      cursor: pointer;
+     padding: 0 1em;
 }
 
 .icon a {
-    height: 1em;
-    width: 1em;
-    padding: .4em .55em .4em;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50%;
+    color: white;
+
 }
 
 .icon-list i {
-    font-size: .8em;
+    font-size: 1.8em;
 }
 
-.scroll-top {
-    width: 100%;
-    text-align: right;
-    margin-right: 5em;
-}
-
-.scroll-top i {
+/* .scroll-top i {
     font-size: 1.5em;
 }
+
+.main-header.scroll-top i{
+    color: red;
+    font-size: 10em;
+    z-index: 10;
+}    */
