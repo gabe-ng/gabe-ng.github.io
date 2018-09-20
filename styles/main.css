@@ -63,12 +63,13 @@ body {
 }
 
 .second-title {
-  max-width: 15em;
   font-size: 2em;
   letter-spacing: 3px;
   position: relative;
   top: 8.5em;
-  left: 37%;
+  width: 100%;
+  text-align: center;
+  margin-left: -6em;
   z-index: 4;
 }
 
@@ -532,7 +533,7 @@ body {
     position: absolute;
     width: 1px;
     z-index: 1;
-    height: 90%;
+    height: 80%;
 }
 
 .skill-title {
