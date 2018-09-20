@@ -58,7 +58,6 @@ body {
 }
 
 .second-title {
-  color: black;
   max-width: 15em;
   font-size: 2em;
   letter-spacing: 3px;
@@ -76,7 +75,6 @@ body {
 	animation: topToBottom 17.5s linear infinite 0s;
 	-ms-animation: topToBottom 17.5s linear infinite 0s;
 	-webkit-animation: topToBottom 17.5s linear infinite 0s;
-	color: black;;
 	opacity: 0;
 	position: absolute;
 }
@@ -200,8 +198,12 @@ body {
 }
 
 .scroll-top i {
-    color: #66fcf1;
+    color: #66fcf150;
     font-size: 3em;
+}
+
+.scroll-top i:hover {
+    color: #66fcf1;
 }
 
 
@@ -379,6 +381,17 @@ body {
     font-style: italic;
 }
 
+.repo {
+    margin-top: 2em;
+    border-bottom: 1px dotted white;
+    cursor: pointer;
+}
+
+.repo:hover {
+    color: #66fcf1;
+    border-bottom: 1px solid #66fcf1;
+}
+
 /* ********** About ********** */
 .about-section {
     width: 100%;
@@ -480,7 +493,12 @@ body {
 }
 
 .my-bio a {
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted white;
+}
+
+.my-bio a:hover {
+    color: #66fcf1;
+    border-bottom: 1px solid #66fcf1;
 }
 
 /* ********* Skills ********* */
@@ -688,10 +706,10 @@ footer {
 .footer {
     width: 100%;
     height: 8em;
-    color: white;
+    color: #ffffff75;
     position: relative;
     top: 100%;
-    background-color: black;
+    background-color: #292b2f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -717,10 +735,14 @@ footer {
 }
 
 .icon a {
-    color: white;
+    color: #ffffff75;
 
 }
 
 .icon-list i {
     font-size: 1.8em;
+}
+
+.icon-list i:hover{
+    color: #66fcf1;
 }
