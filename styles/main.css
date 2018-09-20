@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Lora:400i|Raleway');
+
 body {
     background: #292b2f;
     color: white;
@@ -51,9 +53,12 @@ body {
 
 .main-title {
     position: relative;
-    top: 2.7em;
+    top: 3.5em;
     text-align: center;
     font-size: 4em;
+    font-family: "Anton";
+    letter-spacing: 2px;
+    word-spacing: 1px;
     z-index: 4;
 }
 
@@ -62,8 +67,8 @@ body {
   font-size: 2em;
   letter-spacing: 3px;
   position: relative;
-  top: 7em;
-  left: 39%;
+  top: 8.5em;
+  left: 37%;
   z-index: 4;
 }
 
@@ -231,6 +236,8 @@ body {
 
 .project-title {
     background: #292b2f;
+    font-family: "Anton";
+    letter-spacing: 2px;
     width: 40rem;
     margin: 8em auto 6em;
     padding: 1em 0;
@@ -370,6 +377,7 @@ body {
 
 .project-content h1 {
     font-size: 2.1em;
+    text-transform: uppercase;
     color: #66fcf1;
     font-weight: 550;
     margin-bottom: 1em;
@@ -378,12 +386,19 @@ body {
 
 .project-content p {
     max-width: 85%;
+    font-size: 1.1em;
+    font-family: "Lora";
     font-style: italic;
 }
 
 .repo {
     margin-top: 2em;
     border-bottom: 1px dotted white;
+}
+
+.repo a {
+    font-family: "Raleway";
+    font-style: normal;
     cursor: pointer;
 }
 
@@ -421,6 +436,8 @@ body {
 }
 
 .about-title {
+    font-family: "Anton";
+    letter-spacing: 2px;
     background: #292b2f;
     width: 40rem;
     margin: 0 auto 6em;
@@ -519,6 +536,8 @@ body {
 }
 
 .skill-title {
+    font-family: "Anton";
+    letter-spacing: 2px;
     background: #292b2f;
     width: 40rem;
     margin: 0 auto 6em;
