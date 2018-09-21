@@ -929,6 +929,10 @@ footer {
     .second-title {
         font-size: 1em;
         top: 15em;
+        width: 80%;
+        text-align: justify;
+        left: 2.5em;
+        margin: 0;
     }
 
     .project-container {
