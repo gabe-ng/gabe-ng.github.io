@@ -991,7 +991,6 @@ footer {
 }
 
     @media only screen and (max-width: 400px) {
-        
         .project-text p {
         width: 60%;
         font-size: .6em;
