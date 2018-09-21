@@ -67,6 +67,7 @@ body {
   letter-spacing: 3px;
   position: relative;
   top: 8.5em;
+  /* left: 18em; */
   width: 100%;
   text-align: center;
   margin-left: -6em;
@@ -859,6 +860,10 @@ footer {
     .bt .repo {
         margin-bottom: 1em;
     }
+
+    .about-container {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 940px) {
@@ -911,7 +916,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 605px) {
     .main-header {
         height: 39em;
     }
@@ -924,8 +929,10 @@ footer {
     .second-title {
         font-size: 1em;
         top: 15em;
-        text-align: left;
-        margin-left: 3em;
+    }
+
+    .project-container {
+        width: 100%;
     }
 
     .project {
@@ -934,10 +941,6 @@ footer {
 
     .project.left .project-image {
         margin-bottom: 2em;
-    }
-
-    .project.right {
-        /* padding-top: 1em; */
     }
 
     .wf .repo,
