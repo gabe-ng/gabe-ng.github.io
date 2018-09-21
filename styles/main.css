@@ -585,6 +585,10 @@ body {
     margin: 3em auto;
 }
 
+.skills {
+    display: flex;
+}
+
 .skill {
     max-width: 8em;
     max-height: 8em;
@@ -890,6 +894,23 @@ footer {
     }
 
     .skill-section {
-        margin-top: 6em;
+        margin-top: 5em;
     }
+
+    .skill-row {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .skills.first {
+        margin-bottom: 5em;
+    }
+
+    .email {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+
 }
