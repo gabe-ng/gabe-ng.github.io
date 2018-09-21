@@ -911,6 +911,67 @@ footer {
     }
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 600px) {
+    .main-header {
+        height: 39em;
+    }
 
+    .main-title {
+        font-size: 1.8em;
+        top: 7em;
+    }
+
+    .second-title {
+        font-size: 1em;
+        top: 15em;
+        text-align: left;
+        margin-left: 3em;
+    }
+
+    .project {
+        height: 19em;
+    }
+
+    .project.left .project-image {
+        margin-bottom: 2em;
+    }
+
+    .project.right {
+        /* padding-top: 1em; */
+    }
+
+    .wf .repo,
+    .bt .repo,
+    .ss .repo,
+    .sh .repo {
+        margin-bottom: 1em;
+    }
+
+    .project-title,
+    .about-title,
+    .skill-title {
+        font-size: .8em;
+        width: 100%;
+    }
+
+    .project-content p {
+        font-size: .9em;
+    }
+
+    .project-content h1 {
+        font-size: 1.2em;
+    }
+
+    .my-bio p {
+        font-size: .8em;
+        max-width: 80%;
+    }
+
+    .email {
+        font-size: .9em;
+    }
+
+    .coming-soon {
+        font-size: .7em;
+    }
 }
