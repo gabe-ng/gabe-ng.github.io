@@ -108,4 +108,35 @@ $(window).scroll(function() {
       .addClass("fadeInRight");
   }
 
+  // About Me Header
+  if (height > 1885 && height < 2775) {
+      $(".about-title > h1")
+        .removeClass("hidden")
+        .addClass("fadeinDown");
+    } else if (height >= 2775) {
+      $(".about-title > h1")
+        .removeClass("fadeinDown")
+        .addClass("hidden");
+    } else if (height < 1757) {
+      $(".about-title > h1")
+        .removeClass("fadeinDown")
+        .addClass("hidden");
+    }
+
+  // About Me Section
+  if (height > 2452 && height < 3349) {
+    $(".about-me")
+      .removeClass("hidden")
+      .addClass("fadeinDown");
+  } else if (height >= 3349) {
+    $(".about-me")
+      .addClass("hidden")
+      .removeClass("fadeinDown");
+  } else if (height < 2062) {
+    $(".about-me")
+      .addClass("hidden")
+      .removeClass("fadeinDown");
+  }
+
+
 })
