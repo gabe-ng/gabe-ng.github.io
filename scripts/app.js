@@ -10,6 +10,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Hide Skill
+document.querySelectorAll(".skill").forEach(skill => {
+  skill.classList.add("hidden");
+});
+
+
 // Scroll Animations
 
 $(window).scroll(function() {
@@ -138,5 +144,49 @@ $(window).scroll(function() {
       .removeClass("fadeinDown");
   }
 
+  // Skill Section Header
+  if (height > 2808 && height < 3722) {
+    $(".skill-title > h1")
+      .removeClass("hidden")
+      .addClass("fadeinUp");
+  } else if (height >= 3722) {
+    $(".skill-title > h1")
+      .addClass("hidden")
+      .removeClass("fadeinUp");
+  } else if (height < 2715) {
+    $(".skill-title > h1")
+      .addClass("hidden")
+      .removeClass("fadeinUp");
+  }
 
-})
+  // Skills
+
+  if (height >= 3306 && height < 4498) {
+    let time = 200;
+    document.querySelectorAll(".skill")
+      .forEach(skill => {
+        setTimeout(() => {
+          skill.classList.remove("hidden");
+          skill.classList.add("fadeinUp");
+        }, time);
+        time += 200;
+      });
+    }
+    // } else if (height >= 4498) {
+    //   document.querySelectorAll(".skill").forEach(skill => {
+    //     console.log("hiding");
+    //     skill.classList.add("hidden");
+    //     skill.classList.remove("fadeinUp");
+    //   });
+    // } else if (height < 2984) {    
+    //   document.querySelectorAll(".skill").forEach(skill => {
+    //     console.log("hiding");
+    //     skill.classList.add("hidden");
+    //     skill.classList.remove("fadeinUp");
+    //   });
+    // }
+});
+
+
+
+
